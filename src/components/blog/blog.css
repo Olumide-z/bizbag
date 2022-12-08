@@ -1,0 +1,10 @@
+.blog{
+    padding: 5rem 4rem;
+    background-color: var(--color-bg);
+}
+
+@media screen and (max-width : 550px){
+    .blog{
+        padding: 3rem 2rem;
+    }
+}

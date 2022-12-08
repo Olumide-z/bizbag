@@ -1,0 +1,32 @@
+.filter{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.filter button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    padding: .7rem;
+}
+
+.filter button:hover{
+    background-color: var(--color-yellow);
+}
+
+.filter button:not(:last-child){
+    margin-right: 1.5rem;
+}
+
+.filter button.active{
+    background-color: var(--color-yellow);
+}
+
+@media screen and (max-width: 650px){
+    .filter button:not(:last-child){
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,193 @@
+.pricing__price {
+  padding: 5rem;
+  background-color: var(--color-bg);
+}
+
+.pricing__price-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.pricing__price-cards_card {
+  border: 1px solid var(--color-black);
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pricing__price-cards_card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pricing__price-cards_card-price {
+  color: var(--color-yellow);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.pricing__price-cards_card-price span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.black {
+  background-color: var(--color-black);
+  padding: 6rem 4rem !important;
+  border: none !important;
+}
+
+.pricing__price-cards_card button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  color: var(--color-white);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: var(--color-black);
+}
+
+.btn-yellow {
+  background-color: var(--color-yellow);
+}
+
+.black h3,
+.black div p {
+  color: var(--color-white);
+}
+
+.pricing__price-cards_card div p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.price_check,
+.price_cancel {
+  font-size: 1.2rem;
+}
+
+.price_check {
+  color: var(--color-yellow);
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.pricing__planning {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+}
+
+.pricing__planning-img {
+  flex: 1;
+}
+
+.pricing__planning-img img {
+  width: 60%;
+}
+
+.pricing__planning-right {
+  flex: 1;
+}
+
+.pricing__clients {
+  background-color: var(--color-bg);
+  padding: 5rem;
+}
+
+.pricing__clients-slider .slick-prev,
+.pricing__clients-slider .slick-next {
+  display: block !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+  font-size: 2rem;
+}
+
+.pricing__clients-slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.pricing__clients-slider .slick-slide {
+  width: 100%;
+}
+
+.slick-slide div {
+  margin: 0 1rem;
+}
+
+/* .slick-list{
+    padding: 0 1rem !important;
+} */
+
+@media screen and (max-width: 1000px) {
+  .black {
+    padding: 4rem 2rem !important;
+  }
+
+  .pricing__price-cards_card {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .pricing__planning {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .pricing__planning-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pricing__price {
+    padding: 2rem;
+  }
+
+  .pricing__price-cards {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .black {
+    padding: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pricing__price-cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pricing__price,
+  .pricing__planning,
+  .pricing__clients {
+    padding: 3rem 2rem;
+  }
+
+  .pricing__clients-slider .slick-prev,
+  .pricing__clients-slider .slick-next {
+    display: none !important;
+  }
+}

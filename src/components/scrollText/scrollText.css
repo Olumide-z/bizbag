@@ -1,0 +1,7 @@
+.scrollText{
+    z-index: 1;
+    white-space: nowrap;
+    transition: all .5s ease-in-out;
+    font-size: 5rem;
+    width: 100vw;
+}

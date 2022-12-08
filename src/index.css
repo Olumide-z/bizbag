@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-yellow: #ffb100;
+  --color-white: #fff;
+  --color-black: #24262b;
+  --color-grey: #6f6f6f;
+  --color-bg: #F7F7F7;
+}
+
+.dots{
+  width: 9rem;
+}
+
+/* SLIDER */
+.slick-slider{
+  margin: 2rem 2rem 0 2rem;
+}
+
+.slick-slider ul li button::before {
+      font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before{
+  color: var(--color-yellow);
+}
+
+.slick-dots li button:before {
+  color: var(--color-black);
+  opacity: 1;
+}
+
+.slick-dots li{
+  margin: 0;
+}
+
+.slick-slider button{
+  z-index: 1;
+}
+
+.slick-prev, .slick-next{
+  display: none !important;
 }

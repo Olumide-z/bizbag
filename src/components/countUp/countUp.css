@@ -1,0 +1,9 @@
+.count h3{
+    color: var(--color-yellow);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.count p{
+    text-align: center;
+}

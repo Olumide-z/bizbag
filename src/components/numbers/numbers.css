@@ -1,0 +1,28 @@
+.numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+
+.bg{
+    background-color: var(--color-bg);
+}
+
+.noBdg{
+    background-color: var(--color-white);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width : 1200px){
+    .numbers{
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .numbers{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

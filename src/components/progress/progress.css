@@ -1,0 +1,102 @@
+.progress{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8rem;
+    padding: 5rem 10rem;
+}
+
+.progressRightside{
+    flex: 1;
+}
+
+.progressRightside__progress-bar{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.bar{
+    height: 10px;
+    width: 100%;
+    margin-top: 6px;
+    background: var(--color-grey);
+}
+
+.bar span{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    background: var(--color-yellow);
+    animation: progress 0.8s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+.bar .memory{
+    width: 95%;
+    animation-delay: 3s;
+}
+
+.bar .dev{
+    width: 75%;
+    animation-delay: 4s;
+}
+
+.progress .title{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.progressLeftside{
+    flex: 1;
+}
+
+.progressLeftside img{
+    max-width: 350px;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .progress{
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .progress{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .progressLeftside{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .progress{
+        padding: 3rem 2rem;
+    }
+}
+
