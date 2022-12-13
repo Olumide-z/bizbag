@@ -24,6 +24,12 @@ body{
   width: 9rem;
 }
 
+@media screen and (max-width: 400px){
+  .dots{
+   display: none;
+  }
+}
+
 /* SLIDER */
 .slick-slider{
   margin: 2rem 2rem 0 2rem;

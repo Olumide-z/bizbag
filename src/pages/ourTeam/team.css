@@ -2,3 +2,9 @@
     background-color: var(--color-bg);
     padding: 5rem;
 }
+
+@media screen and (max-width: 550px){
+    .team__members{
+        padding: 3rem 2rem;
+    }
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './header.css';
 
 interface Props {
@@ -14,7 +15,7 @@ const Header: React.FC<Props> = ({ icon, title, text1, text2, image }) => {
     <div className="header">
         <div className="header__left">
             <h1>{title}</h1>
-            <p>{icon} {text1}  <span>/</span> <span>{text2}</span></p>
+            <p><Link to='/' className='header__left-link'>{icon} {text1}</Link> <span>/</span> <span>{text2}</span></p>
         </div>
         <div className="header__right">
             <img src={image} alt="header-image" />

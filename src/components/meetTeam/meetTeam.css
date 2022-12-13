@@ -4,6 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 3rem 0;
+    gap: .5rem;
 }
 
 .meetTeam__wrapper{
@@ -63,4 +64,10 @@
     flex-direction: column;
     width: 100%;
     height: 20%;
+}
+
+@media screen and (max-width: 700px){
+    .meetTeam{
+        justify-content: center;
+    }
 }

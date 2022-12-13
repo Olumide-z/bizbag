@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { data } from './navbarData';
 import './navbar.css';
 
@@ -30,7 +30,7 @@ const Navbar= () => {
   return (
     <div className={ show ? 'navbar' : 'notActive'}>
         <div className="navbar__logo">
-            <img src='/assets/logo.png' alt='logo' />
+            <Link to='/'><img src='/assets/logo.png' alt='logo' /></Link>
         </div>
 
         <div className="navbar__links">

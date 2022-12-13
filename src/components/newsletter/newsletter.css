@@ -76,4 +76,8 @@
     .newsletter{
         padding: 3rem 2rem;
     }
+
+    .newsletter__left h1{
+        font-size: 1.5rem;
+    }
 }

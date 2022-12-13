@@ -55,3 +55,10 @@
     align-items: stretch;
   }
 }
+
+@media screen and (max-width: 450px){
+  .form button{
+    width: 60%;
+    padding: 1rem 0.5rem;
+  }
+}

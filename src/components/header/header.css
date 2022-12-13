@@ -10,6 +10,12 @@
     font-weight: 500;
 }
 
+.header__left-link{
+    text-decoration: none;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
 .header__left p{
     display: flex;
     align-items: center;
@@ -54,5 +60,9 @@
 @media screen and (max-width: 550px){
     .header__left h1{
         font-size: 2rem;
+    }
+
+    .header{
+        padding: 5rem 2rem 3rem 2rem;
     }
 }
